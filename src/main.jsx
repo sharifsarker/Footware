@@ -18,7 +18,7 @@ import OrderList from "./pages/OrderList.jsx";
 import PrivateRoute from "./components/PrivateRoute.jsx";
 import Contact from "./pages/Contact.jsx";
 import About from "./pages/About.jsx";
-axios.defaults.baseURL = "http://localhost:8000/";
+axios.defaults.baseURL = "https://footware-api.onrender.com/";
 
 
 const router = createBrowserRouter([
