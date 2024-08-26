@@ -51,7 +51,8 @@ const AddProduct = () => {
           oldPrice: "",
           sizes: [],
           colors: [],
-          brand: ""
+          brand: "",
+          description: "",
         });
       }
     } catch (error) {
@@ -115,6 +116,16 @@ const AddProduct = () => {
         required
         className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primaryColor"
       />
+      <textarea
+        type="text"
+        name="description"
+        placeholder="Description"
+        value={formData.description}
+        onChange={handleChange}
+        required
+        className="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primaryColor"
+      />
+      
       <ImageUploader onImageUpload={handleImageUpload} />
       <button
         type="submit"

@@ -134,8 +134,7 @@ const ProductDetails = () => {
             <p className="text-base text-gray-400 line-through">${item.oldPrice.toFixed(2)}</p>
           </div>
           <p className="text-gray-600 mt-4">
-            Asperiores ullam culpa commodi est perferendis cupiditate in incidunt? Quasi
-            exercitationem aliquid odit iusto, ea veniam optio veritatis dolores.
+           {item.description}
           </p>
 
           <div className="pt-4">
